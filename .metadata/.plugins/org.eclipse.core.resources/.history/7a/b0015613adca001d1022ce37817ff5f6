@@ -1,0 +1,5 @@
+package com.filipe.projetinho.api.model;
+
+public class EntregaModel {
+
+}

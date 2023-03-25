@@ -1,0 +1,21 @@
+package com.filipe.projetinho.api.assembler;
+
+import org.modelmapper.ModelMapper;
+import org.springframework.stereotype.Component;
+
+import com.filipe.projetinho.api.model.EntregaModel;
+import com.filipe.projetinho.domain.model.Entrega;
+
+import lombok.AllArgsConstructor;
+
+@AllArgsConstructor
+@Component
+public class EntregaAssembler {
+
+	private ModelMapper modelMapper;
+	
+	public EntregaModel toModel(Entrega entrega) {
+		return modelMapper.map(entrega, EntregaModel.class);
+	}
+	
+}

@@ -1,0 +1,27 @@
+package com.filipe.projetinho.domain.service;
+
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.filipe.projetinho.domain.model.Cliente;
+import com.filipe.projetinho.domain.repository.ClienteRepository;
+
+import lombok.AllArgsConstructor;
+
+@AllArgsConstructor
+@Service
+public class CatalogoClienteService {
+	
+	private ClienteRepository clienteRepository;
+	
+	@Transactional
+	public Cliente salvar(Cliente cliente) {
+		return clienteRepository.save(cliente);
+	}
+	
+	@Transactional
+	public void excluir(Long clienteId) {
+		clienteRepository.deleteById(clienteId);
+	}
+
+}

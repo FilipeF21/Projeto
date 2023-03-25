@@ -1,0 +1,1 @@
+spring.datasource.url=jdbc:mysql://localhost/projetinho?createDatabaseIfNotExist=true&serverTimezone=UTC

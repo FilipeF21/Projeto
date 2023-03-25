@@ -1,0 +1,5 @@
+package com.filipe.projetinho.domain;
+
+public interface ValidationGroups {
+
+}

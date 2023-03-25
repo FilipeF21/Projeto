@@ -1,0 +1,5 @@
+package com.filipe.projetinho.domain.repository;
+
+public interface EntregaRepository {
+
+}
